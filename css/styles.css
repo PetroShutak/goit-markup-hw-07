@@ -50,6 +50,7 @@ img {
 button {
   cursor: pointer;
 }
+
 body {
   font-family: "Roboto", sans-serif;
   color: var(--body_color);
@@ -155,7 +156,6 @@ body {
 
 /* ----HERO----- */
 .hero {
-  /* background-color: var(--hero_bgr_color); */
   padding-top: 192px;
   padding-bottom: 192px;
   text-align: center;
@@ -332,13 +332,6 @@ body {
 .social_list_item:not(:last-child) {
   margin-right: 24px;
 }
-/* .social_link_icon {
-  fill: #f4f4fd;
-} */
-/* .social_link_icon:hover,
-.social_link_icon:focus {
-  fill: #4d5ae5;
-} */
 
 /* ---------CUSTOMERS----------- */
 .customers_icon {
@@ -353,7 +346,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* width: 168px; */
   height: 88px;
   color: #8e8f99;
   border: 1px solid #8e8f99;
@@ -362,7 +354,6 @@ body {
 }
 .cust_icon_border {
   flex-basis: calc((100% - 72px) / 6);
-  /* width: 168px; */
 }
 .cust_fill {
   fill: currentColor;
@@ -419,7 +410,6 @@ body {
   line-height: 24px;
   letter-spacing: 0.02em;
   color: var(--title_color_footer);
-  /* text-align: center; */
 }
 .social_media {
   margin-left: 120px;
@@ -448,10 +438,6 @@ body {
 }
 
 /* -----PORTFOLIO------ */
-
-/* .portfolio {
-  background-color: var(--portfolio_bgr);
-} */
 
 .button {
   font-family: "Roboto", sans-serif;
@@ -612,10 +598,7 @@ body {
 .modal_close_btn:active {
   background-color: var(--hero__button_bgr);
 }
-/* .modal_close_btn:hover,
-.modal_close_btn:focus {
-  background-color: ;
-} */
+
 .backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
@@ -830,8 +813,6 @@ body {
   margin-top: 16px;
 }
 .footer_form_input:focus {
-  /* border-color: transparent;
-  outline-color: transparent; */
   outline: none;
   border-color: #ffffff;
 }
