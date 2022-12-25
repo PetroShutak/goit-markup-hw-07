@@ -62,11 +62,7 @@
         </button>
 
         <div class="mobile_menu js-menu-container">
-          <button
-            type="button"
-            class="mobile_close_btn js-close-menu"
-            data-modal-close
-          >
+          <button type="button" class="mobile_close_btn js-close-menu">
             <svg class="mobile_close_icon" width="8" height="8">
               <use href="./images/sprite.svg#icon-close"></use>
             </svg>
@@ -74,7 +70,9 @@
           <div class="mobile_container">
             <ul class="list mobile_nav">
               <li><a href="/index.html" class="link_mobile link"></a>Studio</li>
-              <li><a href="/portfolio.html" class="link_mobile link"></a>Portfolio</li>
+              <li>
+                <a href="/portfolio.html" class="link_mobile link"></a>Portfolio
+              </li>
               <li><a href="" class="link_mobile link"></a>Contacts</li>
             </ul>
             <ul class="list phone">
@@ -117,14 +115,14 @@
     </header>
     <main>
       <!-- HERO -->
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container">
           <h1 class="hero__heading">Effective Solutions for Your Business</h1>
           <button class="hero__button" type="button" data-modal-open>
             Order Service
           </button>
         </div>
-      </section> -->
+      </section>
       <!-- ADVANTAGE -->
       <!-- <section class="advantage_section">
         <div class="container">
@@ -488,7 +486,7 @@
       </div>
     </footer> -->
     <!-- (Modal window) -->
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal_close_btn" data-modal-close>
           <svg class="modal_close_icon" width="8" height="8">
@@ -550,9 +548,9 @@
               class="modal_form_comment"
               placeholder="Text input"
             ></textarea>
-          </label> -->
-    <!----------- ChecBox ---------->
-    <!-- <input
+          </label>
+          <!----------- ChecBox ---------->
+          <input
             name="accept"
             id="user-policy"
             type="checkbox"
@@ -568,7 +566,7 @@
           <button type="submit" class="modal_form_submit">Send</button>
         </form>
       </div>
-    </div> -->
+    </div>
     <script src="./js/mobile-menu.js"></script>
     <script
       defer
@@ -576,7 +574,6 @@
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
     ></script>
-    
     <script src="./js/modal.js"></script>
   </body>
 </html>
