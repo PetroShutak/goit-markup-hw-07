@@ -24,7 +24,8 @@
         <a href="./index.html" class="logo link"
           ><span class="logo__accent">Web</span>Studio</a
         >
-        <nav class="nav_header">
+
+        <nav>
           <ul class="list page_nav">
             <li class="menu_item link">
               <a class="link_current menu__link link" href="./index.html"
@@ -53,18 +54,21 @@
             >
           </li>
         </ul>
-      </div>
-      <button type="button" class="mobile_menu_open_btn js-open-menu">
-        <svg width="32" height="22">
-          <use href="./images/sprite.svg#icon-hamburger"></use>
-        </svg>
-      </button>
-      </div>
-      <div class="mobile_menu js-menu-container">
-        <div class="mobile_container container">
-          <button class="mobile_close_btn js-close-menu">
+
+        <button type="button" class="mobile_menu_open js-open-menu">
+          <svg class="mobile_menu_icon" width="32" height="22">
+            <use href="./images/sprite.svg#icon-hamburger"></use>
+          </svg>
+        </button>
+
+        <div class="mobile_menu js-menu-container">
+          <button
+            type="button"
+            class="mobile_close_btn js-close-menu"
+            data-modal-close
+          >
             <svg class="mobile_close_icon" width="8" height="8">
-              <use href="/images/sprite.svg#icon-close"></use>
+              <use href="./images/sprite.svg#icon-close"></use>
             </svg>
           </button>
           <ul class="list">
@@ -74,10 +78,14 @@
           </ul>
           <ul class="list">
             <li>
-              <a href="tel:+11(000)111-11-11" class="link">+11 (000) 111-11-11</a>
+              <a href="tel:+11(000)111-11-11" class="link"
+                >+11 (000) 111-11-11</a
+              >
             </li>
             <li>
-              <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
+              <a href="mailto:info@devstudio.com" class="link"
+                >info@devstudio.com</a
+              >
             </li>
           </ul>
           <ul class="social_list_mobile list">
@@ -103,6 +111,7 @@
             </li>
           </ul>
         </div>
+      </div>
     </header>
     <main>
       <!-- HERO -->
@@ -540,8 +549,8 @@
               placeholder="Text input"
             ></textarea>
           </label> -->
-          <!----------- ChecBox ---------->
-          <!-- <input
+    <!----------- ChecBox ---------->
+    <!-- <input
             name="accept"
             id="user-policy"
             type="checkbox"
@@ -558,11 +567,13 @@
         </form>
       </div>
     </div> -->
-
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-      crossorigin="anonymous"></script>
-      <script src="./js/mobile-menu.js"></script>
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
