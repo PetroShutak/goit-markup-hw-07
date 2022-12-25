@@ -71,45 +71,47 @@
               <use href="./images/sprite.svg#icon-close"></use>
             </svg>
           </button>
-          <ul class="list">
-            <li><a href="/index.html" class="link"></a>Studio</li>
-            <li><a href="/portfolio.html" class="link"></a>Portfolio</li>
-            <li><a href="" class="link"></a>Contacts</li>
-          </ul>
-          <ul class="list">
-            <li>
-              <a href="tel:+11(000)111-11-11" class="link"
-                >+11 (000) 111-11-11</a
-              >
-            </li>
-            <li>
-              <a href="mailto:info@devstudio.com" class="link"
-                >info@devstudio.com</a
-              >
-            </li>
-          </ul>
-          <ul class="social_list_mobile list">
-            <li class="social_link_mobile">
-              <svg width="24" height="24">
-                <use href="/images/sprite.svg#icon-insta"></use>
-              </svg>
-            </li>
-            <li class="social_link_mobile">
-              <svg width="24" height="24">
-                <use href="/images/sprite.svg#icon-twiter"></use>
-              </svg>
-            </li>
-            <li class="social_link_mobile">
-              <svg width="24" height="24">
-                <use href="/images/sprite.svg#icon-facebook"></use>
-              </svg>
-            </li>
-            <li class="social_link_mobile">
-              <svg width="24" height="24">
-                <use href="/images/sprite.svg#icon-linkedin"></use>
-              </svg>
-            </li>
-          </ul>
+          <div class="mobile_container">
+            <ul class="list mobile_nav">
+              <li><a href="/index.html" class="link_mobile link"></a>Studio</li>
+              <li><a href="/portfolio.html" class="link_mobile link"></a>Portfolio</li>
+              <li><a href="" class="link_mobile link"></a>Contacts</li>
+            </ul>
+            <ul class="list phone">
+              <li>
+                <a href="tel:+11(000)111-11-11" class="link"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li>
+                <a href="mailto:info@devstudio.com" class="link mail_mobile"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="social_list_mobile list">
+              <li class="social_link_mobile">
+                <svg width="24" height="24">
+                  <use href="/images/sprite.svg#icon-insta"></use>
+                </svg>
+              </li>
+              <li class="social_link_mobile">
+                <svg width="24" height="24">
+                  <use href="/images/sprite.svg#icon-twiter"></use>
+                </svg>
+              </li>
+              <li class="social_link_mobile">
+                <svg width="24" height="24">
+                  <use href="/images/sprite.svg#icon-facebook"></use>
+                </svg>
+              </li>
+              <li class="social_link_mobile">
+                <svg width="24" height="24">
+                  <use href="/images/sprite.svg#icon-linkedin"></use>
+                </svg>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -567,13 +569,14 @@
         </form>
       </div>
     </div> -->
+    <script src="./js/mobile-menu.js"></script>
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
     ></script>
-    <script src="./js/mobile-menu.js"></script>
+    
     <script src="./js/modal.js"></script>
   </body>
 </html>
