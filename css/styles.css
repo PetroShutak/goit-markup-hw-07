@@ -108,6 +108,19 @@ body {
   padding-top: 24px;
   padding-bottom: 24px;
 }
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--logo_head_color);
+}
+
+.logo__accent {
+  color: var(--logo__accent);
+}
 .mobile_menu_open {
   background-color: transparent;
   padding: 0;
@@ -121,13 +134,14 @@ body {
   z-index: 100;
   top: 0;
   left: 0;
+  height: 100%;
   background-color: #ffffff;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
 }
 
-.mobile-menu.is-open {
+.mobile_menu.is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
@@ -137,16 +151,23 @@ body {
   font-weight: 700;
   font-size: 36px;
   line-height: 40px;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
+  /* letter-spacing: 0.02em;
+  text-transform: capitalize; */
   color: #2e2f42;
   display: flex;
   flex-direction: column;
   gap: 40px;
+  margin-top: 16px;
   margin-bottom: 284px;
 }
 .link_mobile {
   color: #4d5ae5;
+}
+.phone_mail {
+  display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 48px;
 }
 .phone {
   font-weight: 700;
@@ -162,15 +183,14 @@ body {
 }
 .mobile_container {
   position: relative;
-  padding-top: 80px;
-  padding-bottom: 40px;
-  padding-left: 40px;
+  padding: 40px;
 }
 
 .mobile_close_btn {
   position: absolute;
   top: 40px;
   right: 40px;
+  z-index: 99;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -184,21 +204,35 @@ body {
 .mobile_close_btn:active {
   background-color: var(--hero__button_bgr);
 }
-.logo {
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.5;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--logo_head_color);
-  margin-right: 70px;
+
+.social_list_mobile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 12px;
 }
 
-.logo__accent {
-  color: var(--logo__accent);
+.social_link_mobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--accent_color);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  fill: #f4f4fd;
+  transition: fill var(--transition_dur_funk);
 }
 
+.social_link_mobile:hover,
+.social_link_mobile:focus {
+  /* background-color: #31d0aa; */
+  fill: var(--accent_color);
+}
+
+.social_list_mobile_item:not(:last-child) {
+  margin-right: 56px;
+}
 /* 
 
  */
@@ -213,7 +247,7 @@ body {
   position: absolute;
   display: block;
   left: 0;
-  bottom: -24px;
+  bottom: -28px;
   content: "";
   height: 4px;
   width: 100%;
