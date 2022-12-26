@@ -188,9 +188,6 @@ body {
   position: relative;
   padding: 40px;
 }
-.contacts_social {
-  margin-top: auto;
-}
 .mobile_close_btn {
   position: absolute;
   top: 24px;
@@ -204,7 +201,7 @@ body {
   border-radius: 50%;
   background-color: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 0;
+  /* padding: 0; */
 
 }
 .mobile_close_btn:active {
@@ -215,7 +212,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 12px;
 }
 
 .social_link_mobile {
