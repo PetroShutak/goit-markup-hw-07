@@ -188,7 +188,9 @@ body {
   position: relative;
   padding: 40px;
 }
-
+.contacts_social {
+  margin-top: auto;
+}
 .mobile_close_btn {
   position: absolute;
   top: 24px;
@@ -203,10 +205,11 @@ body {
   background-color: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0;
+
 }
-.mobile_close_btn:active {
+/* .mobile_close_btn:active {
   background-color: var(--hero__button_bgr);
-}
+} */
 
 .social_list_mobile {
   display: flex;
@@ -227,11 +230,11 @@ body {
   transition: fill var(--transition_dur_funk);
 }
 
-.social_link_mobile:hover,
-.social_link_mobile:focus {
+/* .social_link_mobile:hover,
+.social_link_mobile:focus { */
   /* background-color: #31d0aa; */
-  fill: var(--accent_color);
-}
+  /* fill: var(--accent_color);
+} */
 
 .social_list_mobile_item:not(:last-child) {
   margin-right: 56px;
