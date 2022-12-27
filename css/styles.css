@@ -136,8 +136,8 @@ body {
 }
 .mobile_menu {
   position: fixed;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   z-index: 100;
   top: 0;
   left: 0;
@@ -163,7 +163,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  margin-top: 16px;
+  margin-top: 40px;
   margin-bottom: 284px;
 }
 .link_mobile {
@@ -204,7 +204,7 @@ body {
   border-radius: 50%;
   background-color: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  /* padding: 0; */
+  padding: 0;
 }
 .mobile_close_btn:active {
   background-color: var(--hero__button_bgr);
