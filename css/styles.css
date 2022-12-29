@@ -177,9 +177,9 @@ body {
 .link_mobile {
   color: #4d5ae5;
 }
-/* .mobile_adapt{
+.mobile_social_contacts {
   margin-top: auto;
-} */
+}
 .phone_mail {
   display: flex;
   flex-direction: column;
@@ -200,7 +200,9 @@ body {
 }
 .mobile_container {
   position: relative;
-  padding: 40px;
+  padding-top: 80px;
+  padding-bottom: 40px;
+  padding-left: 40px;
 }
 .mobile_close_btn {
   position: absolute;
@@ -824,46 +826,57 @@ body {
     padding: 96px 0;
     margin-left: 0;
   }
+  .mobile_footer_logo {
+    display: block;
+    text-align: center;
+    margin-bottom: 72px;
+  }
   .footer_for {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-
+  .mobile_description_footer {
+    text-align: justify;
+  }
   .mobile_footer_form {
     display: flex;
     align-items: center;
     flex-direction: column;
   }
-  .description_footer,
+
   .social_list {
     margin-bottom: 72px;
   }
   .description_footer,
-  .mobile_logo_footer,
   .social_media {
     margin-left: auto;
     margin-right: auto;
   }
-  .logo_footer,
-  .title_social_mobile {
+  .logo_footer {
     margin-left: auto;
     margin-right: auto;
   }
   .title_social,
   .subscription_form {
-    margin-left: auto;
-    margin-right: auto;
     text-align: center;
   }
   .footer_form_input {
-    width: 396px;
+    width: 100%;
+    max-width: 396px;
+    height: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 8px 16px;
     margin-bottom: 16px;
   }
 }
 
 /* ----Tablet---- */
 
+/* ----Tablet---- */
 .logo_footer {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -888,7 +901,29 @@ body {
     display: flex;
     align-items: baseline;
   }
+  .subscription_form {
+    margin-left: 80px;
+  }
+
+  .footer_form_input {
+    margin-right: 24px;
+  }
+
+  .social_media {
+    margin-left: 120px;
+  }
+
+  .footer_form_input {
+    width: 264px;
+    height: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 8px 16px;
+  }
 }
+
 .description_footer {
   font-weight: 400;
   font-size: 16px;
@@ -905,10 +940,6 @@ body {
   letter-spacing: 0.02em;
   color: var(--title_color_footer);
 }
-
-/* .social_media {
-  margin-left: 120px;
-} */
 
 .footer_social_link {
   display: flex;
@@ -931,23 +962,8 @@ body {
 
 /* -----------Form Footer------------ */
 
-/* .subscription_form {
-  margin-left: 80px;
-} 
-.footer_form_input {
-margin-right: 24px;
-}
-*/
-
-.footer_form_input {
-  width: 264px;
-  height: 40px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  background-color: transparent;
-  padding: 8px 16px;
-}
+/*
+ */
 
 .footer_field {
   font-family: "Roboto";
