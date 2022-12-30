@@ -58,6 +58,7 @@ body {
 
 .container {
   width: 100%;
+  max-width: 1440px;
   padding-left: 16px;
   padding-right: 16px;
 }
@@ -534,7 +535,7 @@ body {
   .advantage_section {
     padding: 96px 0 96px 0;
   }
-  .advantage_subtitle {
+  .subtitle_adv {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 700;
@@ -573,7 +574,6 @@ body {
     font-weight: 700;
     font-size: 36px;
     line-height: 40px;
-    /* text-align: center; */
     margin-bottom: 8px;
     color: #2e2f42;
   }
@@ -618,6 +618,13 @@ body {
     border-radius: 4px;
     margin-bottom: 8px;
   }
+    .subtitle_adv {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 1.2;
+      letter-spacing: 0.02em;
+      color: var(--title_color);
+    }
 }
 @media screen and (max-width: 1199px) {
   .whatare_sectinon {
@@ -753,26 +760,37 @@ body {
   .customers_container {
     padding: 96px 0;
   }
-  .custom_title {
-    margin-bottom: 72px;
-  }
+ 
 }
 @media screen and (max-width: 767px) {
   .mobile_customers_icon {
     display: flex;
     flex-wrap: wrap;
-    row-gap: 16px;
-    column-gap: 72px;
-    /* justify-content: center; */
+    gap: 16px;
+    justify-content: center;
+  }
+  .cust_icon_border {
+    flex-basis: calc((100% - 48px) / 2);
+  }
+  .customers_border {
+    display: block;
+    width: 190px;
+    margin-top: 72px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .tablet_customers_icon {
     display: flex;
     flex-wrap: wrap;
-    row-gap: 24px;
-    column-gap: 72px;
+    gap: 24px;
     justify-content: center;
+  }
+  .cust_icon_border {
+    flex-basis: calc((100% - 48px) / 3);
+  }
+  .customers_border {
+    display: block;
+    margin-top: 72px;
   }
 }
 
@@ -788,13 +806,21 @@ body {
   transition: color var(--transition_dur_funk);
 }
 
-.customers_icon {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 72px;
-  gap: 24px;
-  fill: currentColor;
+/* @media screen and (max-width:767px){
+ 
+ .customers_border{ 
+   width: 190px;
+  } 
+} */
+@media screen and (min-width: 1200px) {
+  .customers_icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 72px;
+    gap: 24px;
+    fill: currentColor;
+  }
 }
 
 .cust_icon_border {
