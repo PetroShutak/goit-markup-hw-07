@@ -58,7 +58,6 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1440px;
   padding-left: 16px;
   padding-right: 16px;
 }
@@ -410,7 +409,7 @@ body {
   }
 
   .hero__heading {
-    max-width: 492px;
+    max-width: 496px;
     margin-bottom: 40px;
     margin-left: auto;
     margin-right: auto;
@@ -762,38 +761,6 @@ body {
   }
  
 }
-@media screen and (max-width: 767px) {
-  .mobile_customers_icon {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-    justify-content: center;
-  }
-  .cust_icon_border {
-    flex-basis: calc((100% - 48px) / 2);
-  }
-  .customers_border {
-    display: block;
-    width: 190px;
-    margin-top: 72px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .tablet_customers_icon {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
-    justify-content: center;
-  }
-  .cust_icon_border {
-    flex-basis: calc((100% - 48px) / 3);
-  }
-  .customers_border {
-    display: block;
-    margin-top: 72px;
-  }
-}
-
 .customers_border {
   display: flex;
   justify-content: center;
@@ -806,12 +773,40 @@ body {
   transition: color var(--transition_dur_funk);
 }
 
-/* @media screen and (max-width:767px){
- 
- .customers_border{ 
-   width: 190px;
-  } 
-} */
+@media screen and (max-width: 767px) {
+  .mobile_customers_icon {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+  }
+  .cust_icon_border {
+    flex-basis: calc((100% - 16px) / 2);
+  }
+  .customers_border {
+    /* display: block; */
+    width: 190px;
+    margin-top: 72px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .tablet_customers_icon {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+  }
+  .cust_icon_border {
+    flex-basis: calc((100% - 32px) / 3);
+  }
+  .customers_border {
+    display: block;
+    margin-top: 72px;
+  }
+}
+
+
+
 @media screen and (min-width: 1200px) {
   .customers_icon {
     display: flex;
@@ -824,7 +819,7 @@ body {
 }
 
 .cust_icon_border {
-  flex-basis: calc((100% - 72px) / 6);
+  flex-basis: calc((100% - 80px) / 6);
 }
 .cust_fill {
   fill: currentColor;
