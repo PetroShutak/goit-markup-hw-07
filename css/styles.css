@@ -303,6 +303,13 @@ body {
   .logo {
     margin-right: 123px;
   }
+  .link_current::after {
+    bottom: -40px;
+  }
+  .page-header {
+    padding-top: 24px;
+    padding-bottom: 22px;
+  }
 }
 .contacts {
   margin-left: auto;
@@ -388,12 +395,12 @@ body {
     max-width: 1199px;
     background-color: var(--accent-color);
     background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
       ),
       url(../images/Hero-tablet.jpg);
-      background-size: cover;
-      margin: 0 auto;
+    background-size: cover;
+    margin: 0 auto;
   }
 
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
@@ -974,12 +981,12 @@ body {
   .form_footer {
     display: flex;
     align-items: center;
-    height: 100%;
-    /* margin-top: 16px; */
+    /* height: 100%; */
+    margin-top: 16px;
   }
-    .footer_for {
-      margin-left: 108px;
-    }
+  .footer_for {
+    margin-left: 108px;
+  }
 }
 
 /* ----Tablet---- */
@@ -1030,15 +1037,14 @@ body {
     line-height: 24px;
     letter-spacing: 0.02em;
     color: #ffffff;
-    /* margin-bottom: 24px; */
+    margin-bottom: 24px;
   }
   .form_footer {
     display: flex;
     align-items: center;
     height: 40px;
-    /* margin-top: 16px; */
+    margin-top: 16px;
   }
- 
 }
 
 .btn_subscr {
@@ -1054,7 +1060,7 @@ body {
   border-color: transparent;
   padding: 8px 24px;
   width: 168px;
-  height: 40px;
+  height: 100%;
   display: flex;
   align-items: center;
   gap: 16px;
@@ -1086,7 +1092,7 @@ body {
 }
 
 /* -----PORTFOLIO------ */
-/* 
+ 
 .button {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -1131,6 +1137,7 @@ body {
   justify-content: center;
   column-gap: 24px;
 }
+
 .elements {
   display: flex;
   flex-wrap: wrap;
@@ -1168,9 +1175,9 @@ body {
 .position_overlay {
   position: relative;
   overflow: hidden;
-} */
+} 
 /* --------OverLay--------- */
-/* 
+
 .overlay {
   position: absolute;
   top: 0;
@@ -1202,7 +1209,7 @@ body {
 .portfolio_link:focus .overlay {
   transform: translateY(0);
   opacity: 1;
-} */
+} 
 
 /* -----------Modal window----------- */
 
