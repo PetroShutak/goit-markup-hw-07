@@ -617,13 +617,13 @@ body {
     border-radius: 4px;
     margin-bottom: 8px;
   }
-    .subtitle_adv {
-      font-weight: 700;
-      font-size: 20px;
-      line-height: 1.2;
-      letter-spacing: 0.02em;
-      color: var(--title_color);
-    }
+  .subtitle_adv {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--title_color);
+  }
 }
 @media screen and (max-width: 1199px) {
   .whatare_sectinon {
@@ -759,18 +759,6 @@ body {
   .customers_container {
     padding: 96px 0;
   }
- 
-}
-.customers_border {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 168px;
-  height: 88px;
-  color: #8e8f99;
-  border: 1px solid #8e8f99;
-  border-radius: 4px;
-  transition: color var(--transition_dur_funk);
 }
 
 @media screen and (max-width: 767px) {
@@ -784,7 +772,7 @@ body {
     flex-basis: calc((100% - 16px) / 2);
   }
   .customers_border {
-    /* display: block; */
+    display: block;
     width: 190px;
     margin-top: 72px;
   }
@@ -805,8 +793,6 @@ body {
   }
 }
 
-
-
 @media screen and (min-width: 1200px) {
   .customers_icon {
     display: flex;
@@ -817,7 +803,17 @@ body {
     fill: currentColor;
   }
 }
-
+.customers_border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 168px;
+  height: 88px;
+  color: #8e8f99;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  transition: color var(--transition_dur_funk);
+}
 .cust_icon_border {
   flex-basis: calc((100% - 80px) / 6);
 }
@@ -842,10 +838,9 @@ body {
 }
 
 /* ----FOOTER--- */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .section_footer {
     padding: 96px 0;
-    margin-left: 0;
   }
   .mobile_footer_logo {
     display: block;
@@ -895,9 +890,7 @@ body {
   }
 }
 
-/* ----Tablet---- */
 
-/* ----Tablet---- */
 .logo_footer {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -944,6 +937,18 @@ body {
     padding: 8px 16px;
   }
 }
+/* ----Tablet---- */
+@media screen and (min-width:768px) and (max-width:1199px) {
+  .section_footer {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+}
+
+
+
+/* ----Tablet---- */
+
 
 .description_footer {
   font-weight: 400;
@@ -983,8 +988,7 @@ body {
 
 /* -----------Form Footer------------ */
 
-/*
- */
+
 
 .footer_field {
   font-family: "Roboto";
