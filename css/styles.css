@@ -1115,7 +1115,8 @@ body {
     row-gap: 48px;
   }
   .portfolio_list {
-    width: 396px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .overlay {
     display: none;
