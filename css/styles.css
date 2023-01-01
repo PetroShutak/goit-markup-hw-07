@@ -1206,7 +1206,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .portfolio_section {
     padding-top: 96px;
     padding-bottom: 120px;
