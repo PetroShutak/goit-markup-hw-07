@@ -1097,6 +1097,9 @@ body {
 
 /* -----PORTFOLIO------ */
 @media screen and (max-width: 767px) {
+  .link_mobile {
+      color: #4d5ae5;
+    }
   .portfolio_section {
     padding-top: 48px;
     padding-bottom: 48px;
