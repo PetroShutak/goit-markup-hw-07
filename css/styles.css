@@ -100,7 +100,7 @@ body {
   position: absolute;
   display: block;
   left: 0;
-  bottom: -28px;
+  bottom: -30px;
   content: "";
   height: 4px;
   width: 100%;
@@ -183,7 +183,7 @@ body {
     display: block;
   }
   .link_current::after {
-    bottom: -34px;
+    bottom: -36px;
   }
   .mail {
     margin-bottom: 4px;
@@ -191,7 +191,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1158px;
+    width: 1200px;
   }
   .mail {
     margin-right: 40px;
@@ -212,6 +212,9 @@ body {
   .link_current::after {
     bottom: -28px;
   }
+  .mail {
+    margin-bottom: 0px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -224,14 +227,35 @@ body {
 }
 
 /* -------/mobile_menu/---------- */
-@media screen and (max-width: 420px) {
-  .mobile_menu {
-    width: 9vw;
-  }
 
-  .social_list_mobile_item:not(:last-child) {
-    margin-right: 13vw;
+.phone {
+  font-weight: 700;
+  font-size: 8vw;
+  line-height: 1.11;
+  color: #4d5ae5;
+}
+
+.social_list_mobile_item:not(:last-child) {
+  margin-right: 11.5vw;
+}
+
+@media screen and (min-width: 480px) {
+  .phone {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    color: #4d5ae5;
   }
+  .social_list_mobile_item:not(:last-child) {
+    margin-right: 56px;
+  }
+}
+.mobile_nav {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 40px;
+  margin-bottom: 284px;
 }
 .mobile_menu_open {
   background-color: transparent;
@@ -269,13 +293,7 @@ body {
 .mobile_menu_item:focus {
   color: var(--accent_color);
 }
-.mobile_nav {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  margin-top: 40px;
-  margin-bottom: 284px;
-}
+
 .link_mobile {
   color: #4d5ae5;
 }
@@ -288,12 +306,12 @@ body {
   gap: 40px;
   margin-bottom: 48px;
 }
-.phone {
+/* .phone {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   color: #4d5ae5;
-}
+} */
 .mail_mobile {
   font-weight: 500;
   font-size: 20px;
@@ -348,10 +366,6 @@ body {
   fill: var(--accent_color);
 }
 
-.social_list_mobile_item:not(:last-child) {
-  margin-right: 56px;
-}
-
 /* -------/mobile_menu/---------- */
 
 /* ----HERO----- */
@@ -380,9 +394,12 @@ body {
         ),
         url(../images/hero-mobile@2x.jpg);
     }
+    .hero__heading {
+      margin-bottom: 72px;
+    }
   }
   .hero__heading {
-    margin-bottom: 80px;
+    /* margin-bottom: 80px; */
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -438,6 +455,9 @@ body {
           rgba(46, 47, 66, 0.7)
         ),
         url(../images/Hero-tablet@2x.jpg);
+    }
+    .hero__heading {
+      margin-bottom: 40px;
     }
   }
 
@@ -502,6 +522,9 @@ body {
         ),
         url(../images/Hero-card@2x.jpg);
     }
+    .hero__heading {
+      margin-bottom: 48px;
+    }
   }
   .hero__heading {
     font-weight: 700;
@@ -511,7 +534,7 @@ body {
     color: var(--hero__heading__color);
     width: 496px;
     text-align: center;
-    margin-bottom: 80px;
+    /* margin-bottom: 80px; */
   }
   .hero__button {
     font-family: "Roboto", sans-serif;
@@ -888,6 +911,9 @@ body {
 }
 
 /* ----FOOTER--- */
+.footer_form_input {
+  color: #ffffff;
+}
 @media screen and (max-width: 767px) {
   .section_footer {
     padding: 96px 0;
@@ -909,6 +935,7 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-top: 16px;
   }
 
   .subscription_form {
@@ -936,7 +963,7 @@ body {
     border-radius: 4px;
     background-color: transparent;
     padding: 8px 16px;
-    margin-top: 16px;
+    /* margin-top: 16px; */
     margin-bottom: 16px;
   }
   .footer_field {
@@ -993,6 +1020,7 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
+    color: #ffffff;
     background-color: transparent;
     padding: 8px 16px;
   }
@@ -1222,7 +1250,7 @@ body {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .portfolio_section {
     padding-top: 64px;
     padding-bottom: 96px;
@@ -1391,6 +1419,12 @@ body {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+@media screen and (max-width: 480px) {
+  .modal {
+    width: 90vw;
+    height: auto;
+  }
 }
 .modal_close_btn {
   position: absolute;
