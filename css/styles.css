@@ -191,7 +191,9 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .mail {
     margin-right: 40px;
@@ -1030,7 +1032,7 @@ body {
     margin-bottom: 24px;
   }
 }
-@media screen and (min-width: 768px) and (max-width:1199px){
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .section_footer {
     padding-top: 96px;
     padding-bottom: 96px;
@@ -1080,7 +1082,6 @@ body {
   }
 }
 
-
 @media screen and (min-width: 1200px) {
   .section_footer {
     padding-top: 100px;
@@ -1113,7 +1114,6 @@ body {
     padding: 8px 16px;
   }
 }
-
 
 .description_footer {
   font-weight: 400;
@@ -1170,8 +1170,6 @@ body {
     margin-top: 16px;
   }
 }
-
-
 
 /* -----PORTFOLIO------ */
 @media screen and (max-width: 767px) {
