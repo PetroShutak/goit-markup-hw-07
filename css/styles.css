@@ -257,7 +257,7 @@ body {
   flex-direction: column;
   gap: 40px;
   margin-top: 40px;
-  margin-bottom: 284px;
+  /* margin-bottom: 60%; */
 }
 .mobile_menu_open {
   background-color: transparent;
@@ -325,6 +325,9 @@ body {
   padding-top: 80px;
   padding-bottom: 40px;
   padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 .mobile_close_btn {
   position: absolute;
