@@ -256,7 +256,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  
 }
 .mobile_menu_open {
   background-color: transparent;
